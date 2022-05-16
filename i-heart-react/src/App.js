@@ -1,28 +1,14 @@
-import HeartLogo from './heart.svg';
+import HeartsList from './components/HeartsList'
 import './App.css';
+import Header from './components/Header';
 
-const message = 'Cool cud';
-
-const Heart = (props) => {
-  return (
-    <div className='heart'>
-      <img src={HeartLogo} className='heart-img' alt='heart' />
-      <p className='heart-message'>{props.msg}</p>
-    </div>
-  )
-}
-
-const Header = () => {
-  return (
-    <div className='App-header' > I ❤️ React</div>
-  )
-}
+//const message = 'Cool cud';
 
 function App() {
   return (
     <>
       <Header />
-      <Heart msg={message} />
+      <HeartsList />
     </>)
 }
 
